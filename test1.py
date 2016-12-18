@@ -11,7 +11,7 @@ for outport in ports:
 	GPIO.setup(outport,GPIO.OUT)
 
 #initiate hand
-thumb = GPIO.PWM(18, 100)
+thumb = GPIO.PWM(18, 100) #duty cycle of 100Hz updates motor every 10 ms
 index = GPIO.PWM(23, 100)
 middle = GPIO.PWM(25, 100)
 ring = GPIO.PWM(22, 100)
